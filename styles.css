@@ -1,0 +1,318 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: popins, sans-serif;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img{
+  width: 150px;
+}
+
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a{
+  color: #555;
+  text-decoration: none;
+}
+
+nav img{
+  height: 30px;
+  width: 30px;
+}
+
+.menu{
+  flex: 1;
+  text-align: right;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.column2 h1{
+  line-height: 60px;
+  font-size: 50px;
+  margin: 25px 0;
+}
+p{
+  color: #555;
+
+}
+
+.btn{
+  display: inline-block;
+  background: #e27f7f;
+  padding: 8px 30px;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: #af5353
+}
+
+.column2 a{
+  margin-top: 15px;
+}
+
+.column2 img{
+  width: 50%;
+  padding: 50px 0px;
+  margin-left: 200px;
+
+}
+
+.container{
+ margin: auto;
+ padding: 0 25px;
+ max-width: 1300px;
+
+}
+
+.header{
+background: radial-gradient(#e7e7e7,#5291e2);
+}
+
+.header .row{
+  margin: 70px 0;
+}
+
+/*This sec is for categories style*/
+
+.column3{
+  flex-basis: 30%;
+  margin: 70px 0;
+  min-width: 250px;
+}
+
+.column3 img{
+  width: 100%;
+}
+
+.small-container{
+  margin: auto;
+  padding: 0 25px;
+  max-width: 1080px;
+}
+
+.categories{
+  margin: 70px 0px;
+}
+
+
+
+/*This section is for featred products*/
+
+.column4{
+  flex-basis: 25%;
+  margin: 40px 0;
+  min-width: 250px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.column4 img{
+  width: 100%;
+}
+
+.title{
+  text-align: center;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+.title::after{
+  content: '';
+  background: #e27f7f;
+  height: 5px;
+  width: 80px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+}
+
+.column4:hover{
+  transform: translateY(-5px);
+}
+
+.column4{
+  font-size: 14px;
+}
+
+
+/*Exclusize section*/
+
+.offer{
+  min-width: 350px;
+  padding: 30px 40px;
+  background: radial-gradient(#eaeaf3,#358b56);
+  margin: 80px 0;
+}
+
+.offer .column3  img{
+padding: 50px;
+}
+/**/
+
+
+
+.testimonials .column3{
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0,0.1);
+ cursor: pointer;
+ transition: transform 0.5s
+}
+
+.small{
+  color: #555;
+}
+
+.testimonials .column3 p{
+  font-size: 12px;
+}
+
+.testimonials .column3 img{
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.testimonials{
+  padding-top: 100px;
+}
+
+.testimonials .column3:hover{
+  transform: translateY(-5px);
+}
+
+.testimonials .column3 h3{
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+}
+
+/*Brands Section*/
+
+.brands{
+  margin: 100px Auto;
+}
+
+.column5{
+  width: 170px;
+}
+
+.column5 img{
+  width: 100%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: filter 0.5s;
+}
+
+.brand-pics:hover{
+  filter: grayscale(0);
+}
+
+/*Footer Section */
+
+.footer{
+
+  padding: 50px Auto;
+  align-items: center;
+  padding: 70px 0 20px;
+  background: #000;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.footer h3{
+ margin-bottom: 20px;
+ color: #ffff;
+}
+
+.footer p{
+  color: #8a8a8a;
+  font-size: 12px;
+}
+
+
+
+.footer-column1{
+  flex-basis: 30%;
+}
+
+.footer-column2{
+  flex: 1;
+  text-align: center;
+}
+.footer-column2 img{
+  width: 180px;
+  margin-bottom: 20px
+}
+
+.footer ul{
+  list-style-type: none;
+  align-items: center;
+}
+
+.footer-column1,.footer-column2 , .footer-column3
+, .footer-column4 {
+  margin-bottom: 20px;
+  min-width: 250px;
+}
+
+.footer-column3 , .footer-column4{
+  flex-basis: 12%;
+  text-align: center;
+}
+.app-logos img{
+  width: 140px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer hr{
+  height: 1px;
+  background: #8a8a8a;
+  margin: 20px 0;
+  border: none;
+}
+
+.copy-text{
+  text-align: center;
+  margin: 20px 0;
+}
